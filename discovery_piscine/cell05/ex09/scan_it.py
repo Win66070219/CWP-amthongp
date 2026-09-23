@@ -3,7 +3,7 @@
 import sys
 import re
 
-if len(sys.argv) <= 2 or len(sys.argv) > 3:
+if len(sys.argv) != 3:
     print("none")
 else:
     matches = re.findall(f"{sys.argv[1]}", sys.argv[2])
